@@ -1,6 +1,9 @@
 function refreshtoken() {
     $.ajax({
         url: "./refreshToken",
-        type:"post"
+        type: "post",
+        success: function () {
+            location.reload()
+        }
     })
 }
